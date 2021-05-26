@@ -1,38 +1,63 @@
 .App {
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 20x;
+}
+
+li {
+  list-style-type: none;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.text-center {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input[type="checkbox"] {
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Form */
+.delete_btn {
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.delete_btn:hover {
+  color: red;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+/* User table */
+.user-table {
+  width: 100%;
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Dataset Table */
+.table-dataset th {
+  background-color: #4c8d74;
+  color: #fff;
+  font-weight: normal;
+}
+.table-dataset tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
 }
